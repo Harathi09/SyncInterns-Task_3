@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh Music Player</title>
+    <link rel="stylesheet" href="MusicPlayer.css">
+    <style>
+li:nth-child(1){
+  background-image: url(spb.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+li:nth-child(2){
+  background-image: url(chitra.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+    </style>
+    <script src="https://kit.fontawesome.com/79b4ed9caf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+        <nav>
+            
+            <div class="round">
+                <button id="menu-button"><i class="fa-solid fa-bars"></i></button>
+                <div id="songs-list" style="display: none;">
+                  <li class="songs" data-song="1"> <a href="MusicSpb.html">SPB</a></li>
+                  <li class="songs" data-song="2"><a href="MusicChitra.html">Chitra</a></li>
+                  
+                </div>
+                
+            </div>
+        </nav>
+        <div class="bkgn">
+          <img src="songlogo.png"></div>
+          <img id="img1" src="anirudh.jpg" alt="Chitra">
+        
+            <h1>Anirudh Ravichandar</h1>
+            <p>Ninnu choose anandhamlo</p>
+        <audio id="audioPlayer">
+          <source src="[iSongs.info] 03 - Ninnu Chuse Anandamlo.mp3" type="audio/mp3">
+        </audio>
+       
+        <br><br>
+        <input type="range" min="0" max="100" value="0" step="1" class="slider" id="progressSlider">
+        <br><br>
+        
+        <button id="pauseBtn" class="pause-btn">
+          <i class="fa-solid fa-pause"></i>
+          
+      </button>
+        <button id="playBtn" class="play-btn">
+            <i class="fa-solid fa-play"></i>
+        </button>
+        
+        <button id="stopBtn">
+            <i class="fa-solid fa-stop"></i>
+        </button>
+        <nav style="justify-content: center;">
+            <div>Pause &nbsp; &nbsp;  </div>
+            <div>Play &nbsp; &nbsp;</div>
+            <div>Reset </div>
+        </nav>
+         
+        </div>
+      </div>
+      <script src="MusicPlayer.js"></script>
+</body>
+</html>
